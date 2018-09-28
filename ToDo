@@ -1,3 +1,4 @@
+Make it so bot can read multiple game names and provide the roles for each one identified in one message
 Greet new user on the event of new user and suggest they name games they play from the list of games in the #welcome channel
 Optimize all keyword/sentence checks and make sure to test against many previous answers from new members in the #game-check channel
 Maybe add a !newRole command that mods can use anywhere in the server. Parameters can be (username, rolename)
