@@ -23,11 +23,9 @@ Tbot.on('message', message => {     //respond to any message anywhere
     var msg = message.content.toLowerCase();
     
     if(message.channel == message.guild.channels.find(x => x.name == 'game-check')){
-        if (msg.indexOf('unf ') !== -1
-        || msg.indexOf('university of north florida') !== -1
-        || msg.indexOf('unf.') !== -1) {
-            //message.channel.send('```Idk mane```');
-            //message.member.addRoles(message.guild.roles.find('name', 'unf Students').id);
+        if (msg.indexOf('i\'m a student') !== -1
+        || msg.indexOf('im a student') !== -1
+        || msg.indexOf('i go to unf') !== -1) {
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'unf Students').id);
             }catch(err){
@@ -60,54 +58,50 @@ Tbot.on('message', message => {     //respond to any message anywhere
                 console.log('Tried adding role to member that already has that role. Error:\t'+ err);
             }
         }else if (msg.indexOf('overwatch') !== -1
-        || msg.indexOf('ow ') !== -1
-        || msg.indexOf('ow.') !== -1
-        || msg.indexOf('ow,') !== -1) {
+        || msg.indexOf(' ow ') !== -1
+        || msg.indexOf(' ow.') !== -1
+        || msg.indexOf(' ow,') !== -1) {
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'Overwatch').id);
             }catch(err){
                 console.log('Tried adding role to member that already has that role. Error:\t'+ err);
             }
         }else if (msg.indexOf('counter strike') !== -1
-        || msg.indexOf('csgo ') !== -1
-        || msg.indexOf('csgo.') !== -1
-        || msg.indexOf('csgo,') !== -1) {
+        || msg.indexOf('csgo') !== -1
+        || msg.indexOf(' cs ') !== -1){
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'Counter Strike').id);
             }catch(err){
                 console.log('Tried adding role to member that already has that role. Error:\t'+ err);
             }
         }else if (msg.indexOf('smash') !== -1
-        || msg.indexOf('dbz ') !== -1
-        || msg.indexOf('dbz.') !== -1
-        || msg.indexOf('dbz,') !== -1) {
+        || msg.indexOf('dbfz') !== -1
+        || msg.indexOf('dbz') !== -1) {
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'Fighters').id);
             }catch(err){
                 console.log('Tried adding role to member that already has that role. Error:\t'+ err);
             }
         }else if (msg.indexOf('rocket league') !== -1
-        || msg.indexOf('rl ') !== -1
-        || msg.indexOf('rl.') !== -1
-        || msg.indexOf('rl,') !== -1) {
+        || msg.indexOf(' rl ') !== -1
+        || msg.indexOf(' rl.') !== -1
+        || msg.indexOf(' rl,') !== -1) {
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'Rocket League').id);
             }catch(err){
                 console.log('Tried adding role to member that already has that role. Error:\t'+ err);
             }
         }else if (msg.indexOf('hearthstone') !== -1
-        || msg.indexOf('hearth ') !== -1
-        || msg.indexOf('hearth.') !== -1
-        || msg.indexOf('hearth,') !== -1) {
+        || msg.indexOf(' hearth ') !== -1) {
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'Hearthstone').id);
             }catch(err){
                 console.log('Tried adding role to member that already has that role. Error:\t'+ err);
             }
         }else if (msg.indexOf('minecraft') !== -1
-        || msg.indexOf('mc ') !== -1
-        || msg.indexOf('mc.') !== -1
-        || msg.indexOf('mc,') !== -1) {
+        || msg.indexOf(' mc ') !== -1
+        || msg.indexOf(' mc.') !== -1
+        || msg.indexOf(' mc,') !== -1) {
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'Minecraft').id);
             }catch(err){
@@ -116,7 +110,7 @@ Tbot.on('message', message => {     //respond to any message anywhere
         }
  /****************************************Start of League*********************************************** */       
         else if (msg.indexOf('league of legends') !== -1
-        || msg.indexOf(' lol ') !== -1
+        || msg.indexOf(' lol') !== -1
         || msg.indexOf(' lol.') !== -1
         || msg.indexOf(' lol,') !== -1) {
             try{
@@ -129,15 +123,15 @@ Tbot.on('message', message => {     //respond to any message anywhere
                 try{
                     message.member.addRoles(message.guild.roles.find(x => x.name == 'League of Legends').id);
                 }catch(err){
-                    console.log('Tried adding role to member that already has that role. Error:\t'+ err);
+                    console.log('Member already had league role. Error:\t'+ err);
                 }
             }
         }
 /****************************************End of League*********************************************** */
         else if (msg.indexOf('heroes of the storm') !== -1
-        || msg.indexOf('hots ') !== -1
-        || msg.indexOf('hots.') !== -1
-        || msg.indexOf('hots,') !== -1
+        || msg.indexOf(' hots ') !== -1
+        || msg.indexOf(' hots.') !== -1
+        || msg.indexOf(' hots,') !== -1
         || msg.indexOf('heros of the storm') !== -1) {
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'Heroes of the Storm').id);
@@ -145,9 +139,9 @@ Tbot.on('message', message => {     //respond to any message anywhere
                 console.log('Tried adding role to member that already has that role. Error:\t'+ err);
             }
         }else if (msg.indexOf('fortnite') !== -1
-        || msg.indexOf('fn ') !== -1
-        || msg.indexOf('fn.') !== -1
-        || msg.indexOf('fn,') !== -1) {
+        || msg.indexOf(' fn ') !== -1
+        || msg.indexOf(' fn.') !== -1
+        || msg.indexOf(' fn,') !== -1) {
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'Fortnite').id);
             }catch(err){
@@ -156,9 +150,9 @@ Tbot.on('message', message => {     //respond to any message anywhere
         }else if (msg.indexOf('siege') !== -1
         || msg.indexOf('seige') !== -1
         || msg.indexOf('rainbow') !== -1
-        || msg.indexOf('r6 ') !== -1
-        || msg.indexOf('r6.') !== -1
-        || msg.indexOf('r6,') !== -1) {
+        || msg.indexOf(' r6 ') !== -1
+        || msg.indexOf(' r6.') !== -1
+        || msg.indexOf(' r6,') !== -1) {
             try{
                 message.member.addRoles(message.guild.roles.find(x => x.name == 'Rainbow 6 Siege').id);
             }catch(err){
@@ -174,4 +168,4 @@ Tbot.on('message', message => {     //respond to any message anywhere
     }else if(msg == 'large.'){message.channel.send('_***GINORMOUS***_')}
 });
 
-Tbot.login('Placeholder').catch(console.error);
+Tbot.login('NDkzOTM2MDM5MzkyNDQ0NDE3.DosO0A.do_PrBn33krH01n3eE48Y0Lntgg').catch(console.error);
