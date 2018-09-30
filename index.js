@@ -1,13 +1,11 @@
-/******************
-To Run:     . node
-To Stop:    ctrl c
+/***************************************************
 
-Call it CinnamonRoleBot
-Give it a command to list facts about cinnamon rolls (just google it)
-Give it a command to link lmgtfy when you ask it a question
 
-rand = Math.floor(Math.random()*3);
-//*****************/
+                Made solely by Key
+
+
+//**************************************************/
+
 
 var Discord = require('discord.js');
 var Tbot = new Discord.Client();
@@ -170,6 +168,8 @@ function addRole(m, roleName){
     } 
 }
 /*
+rand = Math.floor(Math.random()*3);
+
 function sleep(ms){
     return new Promise(resolve => setTimeout(resolve, ms));
 }
