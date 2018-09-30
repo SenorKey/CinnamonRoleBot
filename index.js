@@ -1,8 +1,13 @@
-/**************************
+/******************
+To Run:     . node
+To Stop:    ctrl c
 
-   Written solely by Key
+Call it CinnamonRoleBot
+Give it a command to list facts about cinnamon rolls (just google it)
+Give it a command to link lmgtfy when you ask it a question
 
-//*************************/
+rand = Math.floor(Math.random()*3);
+//*****************/
 
 var Discord = require('discord.js');
 var Tbot = new Discord.Client();
@@ -212,4 +217,4 @@ Tbot.on('message', message => {
     }
 });
 
-Tbot.login('Hidden').catch(console.error);
+Tbot.login('NDkzOTM2MDM5MzkyNDQ0NDE3.DosO0A.do_PrBn33krH01n3eE48Y0Lntgg').catch(console.error);
