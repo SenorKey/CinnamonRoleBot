@@ -217,4 +217,4 @@ Tbot.on('message', message => {
     }
 });
 
-Tbot.login('NDkzOTM2MDM5MzkyNDQ0NDE3.DosO0A.do_PrBn33krH01n3eE48Y0Lntgg').catch(console.error);
+Tbot.login('Hidden').catch(console.error);
