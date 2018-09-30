@@ -3,3 +3,5 @@ Greet new user on the event of new user and suggest they name games they play fr
 Optimize all keyword/sentence checks and make sure to test against many previous answers from new members in the #game-check channel
 Maybe add a !newRole command that mods can use anywhere in the server. Parameters can be (username, rolename)
 Make sure to log everything with timestamps
+Give it a command to list facts about cinnamon rolls (just google it)
+Give it a command to link lmgtfy when you ask it a question
