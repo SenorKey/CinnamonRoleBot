@@ -1,11 +1,8 @@
-/******************
-To Run:     . node
-To Stop:    ctrl c
+/**************************
 
-Call it CinnamonRoleBot
+   Written solely by Key
 
-rand = Math.floor(Math.random()*3);
-//*****************/
+//*************************/
 
 var Discord = require('discord.js');
 var Tbot = new Discord.Client();
