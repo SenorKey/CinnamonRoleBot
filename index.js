@@ -3,8 +3,6 @@ To Run:     . node
 To Stop:    ctrl c
 
 Call it CinnamonRoleBot
-Give it a command to list facts about cinnamon rolls (just google it)
-Give it a command to link lmgtfy when you ask it a question
 
 rand = Math.floor(Math.random()*3);
 //*****************/
