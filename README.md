@@ -4,5 +4,9 @@ This is just a bot created by me, Ki-Jana Panzarella, for the UNF esports club d
 
 So far this bot successfully assigns roles (when it's able to detect them in a message) but only if one role is requested at a time in its own message. This will soon be expanded to work for any number of roles being requested in any number of messages.
 
-To Run:     . node
-To Stop:    ctrl c
+Download and install latest Visual Studio and Node.js to run this bot. (I use "Visual Studio Code" instead of "Visual Studio")
+
+in Visual Studio command line use npm install Discord.js
+
+To Run Bot:     . node
+To Stop Bot:    ctrl c
